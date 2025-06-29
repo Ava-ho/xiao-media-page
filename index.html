@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Медиа-контент: Сяо</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: #000000e6;
+      color: #f0f0f0;
+      margin: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #e6e6e6e6;
+    }
+
+    .media-card {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .media-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .description {
+      margin-top: 15px;
+      margin-left: 20px;
+      background: #24a4b2;
+      color: #1a1a1a;
+      padding: 12px 18px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.807);
+      max-width: 95%;
+      list-style: none;
+      font-size: 16px;
+    }
+
+    .description li {
+      margin-bottom: 4px;
+    }
+
+    .video-container {
+     aspect-ratio: 16 / 9;
+     width: 100%;
+     max-width: 1100px;
+     margin: 40px auto;
+     overflow: hidden;
+     border-radius: 12px;
+     background: black;
+    }
+
+    .video-container iframe {
+     width: 100%;
+     height: 100%;
+     border: none;
+     display: block;
+    }
+
+    .local-video {
+      max-width: 1100px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .local-video video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 0;
+      border-radius: 10px;
+    }
+
+    .audio-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .download-button {
+      display: inline-block;
+      padding: 30px 40px;
+      background-color: #24a4b2;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      transition: background-color 0.3s;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .download-button:hover {
+      background-color: #1e8fa0;
+    }
+
+    .center {
+      text-align: center;
+    }
+  </style>
+
+  <style>
+
+    img {
+      -webkit-user-drag: text;
+      -khtml-user-drag: text;
+      -moz-user-drag: text;
+      -o-user-drag: text;
+    }
+  </style>
+  <script>
+    document.addEventListener("contextmenu", event => event.preventDefault());
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && ['s', 'u', 'c'].includes(e.key.toLowerCase()) || e.key === 'F12') {
+        e.preventDefault();
+        alert("Копирование отключено.");
+      }
+    });
+  </script>
+
+</head>
+<body>
+
+  <h1 data-aos="fade-down">Медиа-контент: Сяо</h1>
+
+  <div class="media-card" data-aos="fade-up">
+    <img src="https://thesaintshub.com/wp-content/uploads/dir_42/thesaintshub.com_wallpapers_0000145474.jpg" draggable="false"
+         alt="Арт с Сяо" title="Арт с Сяо">
+
+    <ul class="description">
+      <li><strong>Имя:</strong> Сяо (Xiao)</li>
+      <li><strong>Настоящее имя:</strong> Алатаус (Alatus)</li>
+      <li><strong>Редкость:</strong> ★★★★★</li>
+      <li><strong>Элемент:</strong> Анемо (ветер)</li>
+      <li><strong>Оружие:</strong> Копьё</li>
+      <li><strong>Регион:</strong> Ли Юэ</li>
+      <li><strong>Созвездие:</strong> Alatus Nemeseos</li>
+      <li><strong>Роль:</strong> Основной урон (DPS)</li>
+    </ul>
+  </div>
+
+    <h2 data-aos="fade-left">Песня с Яндекс.Музыки: Gata only</h2>
+    <div class="audio-container" data-aos="fade-up">
+    <iframe frameborder="0"
+            style="border:none;width:360px;height:100px;"
+            src="https://music.yandex.ru/iframe/track/132073406/33663788"
+            title="Gata only">
+    </iframe>
+    </div>
+  
+
+  <h2 data-aos="zoom-in">Локальное видео: 460mm Go Bang</h2>
+  <div class="local-video" data-aos="zoom-in-up">
+    <video controls preload="metadata">
+      <source src="460mm Go Bang.mp4" type="video/mp4">
+      Ваш браузер не поддерживает тег video.
+    </video>
+  </div>
+
+  <h2 data-aos="fade-up-right">Видео с YouTube: Цзюй Фу Фу</h2>
+<div class="video-container" data-aos="fade-up">
+  <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/Oz3CTkv8AKo?si=qfrI3rLGSokvR2u6"
+          title="YouTube"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+  </iframe>
+</div>
+
+  <!-- Подключение AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
